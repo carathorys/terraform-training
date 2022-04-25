@@ -1,6 +1,9 @@
 # Zoosh TF Training
 
-## Strutcure
+## Files we have so far
+
+### `.terraform.lock.hcl`: 
+This is a dependency lock file, like the `package-lock.json` or `yarn.lock`, just for Terraform. If you check out the repository, and run the `terraform init` command, it will download the necessary providers from the TF registry
 
 ### `main.tf`:
 This file will contain our infrastructure itself
