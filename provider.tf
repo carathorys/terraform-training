@@ -1,9 +1,9 @@
 # Set up AWS Provider
 provider "aws" {
   # Use a local, named profile
-  profile = local.aws_profile
+  profile = "default"
   # Use the following region to deploy our stack
-  region = local.aws.region
+  region = "eu-west-1"
 
   # Add tags to each resource we're provisioning with Terraform
   default_tags {

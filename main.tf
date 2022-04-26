@@ -1,6 +1,7 @@
 module "my_module" {
   source     = "./my-module" # relative path to "my-module"'s folder
-  variable_1 = "cheese"      # Variable defined in 'my-module'
+  variable_1 = "ami-42144"   # Variable defined in 'my-module'
+
 }
 locals {
   # reference to the module's output
