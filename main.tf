@@ -9,6 +9,8 @@ locals {
 
 module "same_module_from_github" {
   # Reference a module from git
+  # If you’re using SSH protocol, you’ll need to have a valid SSH key,
+  # as TF will clone the remote repository to a local folder
   source               = "git@github.com:carathorys/terraform-training-remote-module.git?ref=1.0.0"
   remote_modules_input = true # Define input variables
 }
