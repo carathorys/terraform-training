@@ -9,5 +9,4 @@ locals {
 # Later you can reference to your local variable with the `local` keyword before it's name
 locals {
   local_var_3 = "The value of the `local_var_1` is ${local.local_var_1}"
-  local_var_1 = "sajt"
 }
